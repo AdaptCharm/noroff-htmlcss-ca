@@ -70,42 +70,6 @@ a {
 
 
 
-/* Announcement */
-.announcement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 17px;
-  background-color: var(--foreground);
-  color: var(--background);
-  border-top: 3px solid var(--foreground);
-}
-
-.announcement .inner {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.announcement .inner p:nth-child(1) {
-  display: none;
-}
-
-.announcement .inner p:nth-child(2) {
-  display: block;
-}
-
-@media (min-width: 600px) {
-  .announcement .inner p:nth-child(1) {
-    display: block;
-  }
-
-  .announcement .inner p:nth-child(2) {
-    display: none;
-  }
-}
-
-
-
 /* Main section */
 .section {
   padding: 15vh 0

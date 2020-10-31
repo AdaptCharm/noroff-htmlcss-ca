@@ -101,7 +101,7 @@
 
 .link {
   font-size: 14px;
-  color: hsla(192, 73%, 15%, 0.6);
+  color: hsla(192, 73%, 15%, 0.66);
   transition: color .2s ease-in-out;
 }
 

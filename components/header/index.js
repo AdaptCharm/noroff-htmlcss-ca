@@ -1,17 +1,11 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+
 import styles from './header.module.css'
 
+import RainyDaysLogo from '../icons/logo'
 import MobileMenuButton from '../icons/menu-toggle'
-
-const Logo = ({ src, height, ...props }) => (
-  <img 
-    src={src}
-    style={{ height: height || 80 }}
-    {...props} 
-  />
-)
 
 const ActiveLink = ({ href, children }) => {
   const { pathname } = useRouter()
@@ -43,11 +37,13 @@ const Header = () => {
             <ActiveLink href="/clothes">Clothes</ActiveLink>
           </nav>
 
-          <Link href="/">
-            <a className={styles.logo} aria-label="RainyDays logo">
-              <Logo src="/logo.png" />
-            </a>
-          </Link>
+          <div className={styles.center}>
+            <Link href="/">
+              <a className={styles.logo} aria-label="RainyDays logo">
+                <RainyDaysLogo size="4" />
+              </a>
+            </Link>
+          </div>
 
           <div className={styles.right}>
             <ActiveLink href="/login">Log in</ActiveLink>

@@ -1,16 +1,151 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(192, 73%, 15%);
+
+  --radius-small: 5px;
+
+  --font-primary: 'Nunito', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+::selection {
+  background-color: hsla(192, 73%, 15%, 99%); /* Opacity to fix grey scale bug */
+  color: var(--background);
+}
+
+body {
+  font: 400 16px/1.5 var(--font-primary);
+  text-rendering: optimizeLegibility;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 a {
-  color: inherit;
+  color: currentColor;
+  transition: color 420ms ease-in-out;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.debug {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+
+
+/* Button */
+.button {
+  font-family: inherit;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 12px 24px;
+  border-radius: var(--radius-small);
+}
+
+.pulseEffect {
+  animation: buttonClick 1s;
+}
+
+.pulseEffectTwo {
+  animation: buttonClickTwo 1s;
+}
+
+@keyframes buttonClick {
+  5% {
+      transform: scale(0.9)
+  }
+}
+
+@keyframes buttonClickTwo {
+  5% {
+      transform: scale(0.9)
+  }
+}
+
+
+
+/* Announcement */
+.announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  background-color: var(--foreground);
+  color: var(--background);
+  border-top: 3px solid var(--foreground);
+}
+
+.announcement .inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.announcement .inner p:nth-child(1) {
+  display: none;
+}
+
+.announcement .inner p:nth-child(2) {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .announcement .inner p:nth-child(1) {
+    display: block;
+  }
+
+  .announcement .inner p:nth-child(2) {
+    display: none;
+  }
+}
+
+
+
+/* Main section */
+.section {
+  padding: 15vh 0
+}
+
+.section .inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 600px) {
+  .section .inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* Hero section */
+.hero .side-by-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero .content {
+  text-align-last: center;
+}
+
+.hero .title {
+  font-size: 44px;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 15ch;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 600px) {
+  .hero .side-by-side {
+    flex-direction: row;
+  }
 }

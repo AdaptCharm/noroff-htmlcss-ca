@@ -29,7 +29,7 @@ const ActiveLink = ({ href, children }) => {
   )
 }
 
-export default () => {
+const Header = () => {
   const [mobileNavShown, setMobileNavShown] = useState(false)
 
   const toggle = () => setMobileNavShown(!mobileNavShown)
@@ -79,3 +79,5 @@ export default () => {
     </>
   )
 }
+
+export default Header

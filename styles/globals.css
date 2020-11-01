@@ -44,7 +44,8 @@ a {
 
 
 /* Button */
-.button {
+button, .button {
+  cursor: pointer;
   font-family: inherit;
   background-color: var(--foreground);
   color: var(--background);
@@ -88,32 +89,5 @@ a {
   .section .inner {
     max-width: 960px;
     margin: 0 auto;
-  }
-}
-
-
-
-/* Hero section */
-.hero .side-by-side {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero .content {
-  text-align-last: center;
-}
-
-.hero .title {
-  font-size: 44px;
-  font-weight: 800;
-  text-transform: uppercase;
-  max-width: 15ch;
-  margin-bottom: 25px;
-}
-
-@media (min-width: 600px) {
-  .hero .side-by-side {
-    flex-direction: row;
   }
 }

@@ -1,0 +1,28 @@
+.hero {
+  padding: 15vh;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .inner {
+    flex-direction: row;
+  }
+}
+
+.content {
+  text-align-last: center;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 15ch;
+  margin-bottom: 25px;
+}

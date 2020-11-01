@@ -98,6 +98,12 @@ button, .button {
 
 
 /* Grid system */
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  --gutter-x: 1.5rem;
+  padding: 0 calc(var(--gutter-x) / 2);
+  margin: 0 auto
+}
+
 .row {
   --gutter-x: 1.5rem;
   --gutter-y: 0;

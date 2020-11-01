@@ -329,3 +329,77 @@ button, .button {
     flex: 0 0 auto;
   }
 }
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 1);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-2 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 2);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-3 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 3);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-4 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 4);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-5 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 5);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-6 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 6);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-7 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 7);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-8 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 8);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-9 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 9);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-10 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 10);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-11 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 11);
+    flex: 0 0 auto;
+  }
+
+  .col-xl-12 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 12);
+    flex: 0 0 auto;
+  }
+}

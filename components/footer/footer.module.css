@@ -1,5 +1,11 @@
 .footer {
-  padding: 12vh 24px 12px;
+  padding: 12vh 24px 0;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 12vh 24px 1vh;
+  }
 }
 
 .section {
@@ -52,7 +58,7 @@
 .section:nth-child(2) {
   justify-content: center;
   align-items: center;
-  border-top: 1px dashed var(--foreground);
+  border-top: 1px dashed hsla(192, 73%, 15%, 0.10);
   max-width: 1280px;
   margin: 0 auto;
 }

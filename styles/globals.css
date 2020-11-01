@@ -1049,7 +1049,38 @@ button, .button {
 
 
 
-/* Circle component */
+/* Popular product component */
+.heart {
+  overflow: visible;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right: 10.2px;
+}
+
+.heart > svg > path {
+  stroke: hsl(0, 100%, 30%);
+  stroke-width: 2;
+}
+
+.heart.active > svg > path {
+  fill: hsl(0, 100%, 40%);
+  stroke-width: none;
+  stroke: none;
+}
+
+
+.price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: hsl(0 0% 90% / 0.9);
+  padding: 6px 8px;
+  border-radius: var(--radius-small);
+  box-shadow: 3px -3px 20px hsl(192 73% 15% / 0.20);
+}
+
+
 .circle {
   border: 3px solid var(--background);
   transition: all .2s ease-in;
@@ -1069,26 +1100,4 @@ button, .button {
 
 .circle:nth-child(odd) {
   background-color: black;
-}
-
-
-
-
-
-/* Heart component */
-.heart {
-  overflow: visible;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.heart > svg > path {
-  stroke: hsl(0, 100%, 30%);
-  stroke-width: 2;
-}
-
-.heart.active > svg > path {
-  fill: hsl(0, 100%, 40%);
-  stroke-width: none;
-  stroke: none;
 }

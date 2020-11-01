@@ -31,7 +31,7 @@ const Index = () => {
           <h2 className="text-secondary mb-12">Popular Jackets</h2>
           <div className={popularStyles.grid}>
             <div className="flex flex-col items-center">
-              <div className="flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
+              <div className="relative flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
                 <div className={`heart ${heart ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggleHeart}>
                   <Heart />
                 </div>
@@ -42,7 +42,7 @@ const Index = () => {
                 <div className="circle size-5 bg-primary rounded-large"></div>
                 <div className="circle size-5 bg-primary rounded-large ml-3"></div>
               </div>
-              <h3 className="text-secondary text-base text-center">All weather jacket</h3>
+              <h3 className="text-secondary text-base text-center font-medium">All weather jacket</h3>
             </div>
           </div>
         </div>

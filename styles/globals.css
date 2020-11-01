@@ -121,6 +121,14 @@ button, .button {
   }
 }
 
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    --max-width: 992;
+    --gutter-x: 16;
+    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+  }
+}
+
 .row {
   --gutter-x: 1.5rem;
   --gutter-y: 0;

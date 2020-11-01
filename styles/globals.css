@@ -104,6 +104,14 @@ button, .button {
   margin: 0 auto
 }
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    --max-width: 576;
+    --gutter-x: 18;
+    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+  }
+}
+
 .row {
   --gutter-x: 1.5rem;
   --gutter-y: 0;

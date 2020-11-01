@@ -1049,7 +1049,7 @@ button, .button {
 
 
 
-/* Custom styling */
+/* Circle component */
 .circle {
   border: 3px solid var(--background);
   transition: all .2s ease-in;
@@ -1072,19 +1072,23 @@ button, .button {
 }
 
 
-/* Heart */
+
+
+
+/* Heart component */
 .heart {
-  transform: scale(0.8);
-  transition: transform .2s ease-out;
+  overflow: visible;
   cursor: pointer;
+  z-index: 2;
 }
 
-.heart:hover {
-  transform: scale(1);
-  transition: transform .2s ease-in;
+.heart > svg > path {
+  stroke: hsl(0, 100%, 30%);
+  stroke-width: 2;
 }
 
-.heart:hover > path {
-  fill: #868e96;
-  transition: fill .3s cubic-bezier(.4,0,.2,1);
+.heart.active > svg > path {
+  fill: hsl(0, 100%, 40%);
+  stroke-width: none;
+  stroke: none;
 }

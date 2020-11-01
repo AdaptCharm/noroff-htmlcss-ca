@@ -1,14 +1,18 @@
+import { useState } from 'react'
 import Image from 'next/image'
 
 import Page from './../components/page'
 import Footer from './../components/footer'
+import Heart from '../components/icons/heart'
 
 import heroStyles from './../styles/pages/home/hero.module.css'
 import popularStyles from './../styles/pages/home/popular.module.css'
 
-import Heart from '../components/icons/heart'
-
 const Index = () => {
+  const [heartEnabled, setHeartEnabled] = useState(false)
+
+  const toggle = () => setHeartEnabled(!heartEnabled)
+
   return (
     <Page>
       <section className={heroStyles.hero}>
@@ -27,7 +31,9 @@ const Index = () => {
           <div className={popularStyles.grid}>
             <div className="flex flex-col items-center">
               <div className="flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
-                <Heart />
+                <div className={`heart ${heartEnabled ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggle}>
+                  <Heart />
+                </div>
                 <Image src="/jackets/black-jacket.png" width="213" height="220" alt="Black Jacket" />
                 <span className="price">$200,00</span>
               </div>

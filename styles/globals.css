@@ -784,6 +784,33 @@ button, .button {
 
 
 
+/* Sizing */
+.size-1 {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.size-2 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.size-3 {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
 /* Width */
 .w-1 {
   width: 0.25rem;
@@ -846,11 +873,7 @@ button, .button {
 }
 
 
-
-
-
 /* Height */
-/* Width */
 .h-1 {
   height: 0.25rem;
 }
@@ -1010,14 +1033,14 @@ button, .button {
 
 
 /* Border radius */
-.rounded-md {
+.rounded-small {
   border-radius: .375rem;
 }
 
-.rounded-lg {
+.rounded-medium {
   border-radius: .5rem;
 }
 
-.rounded-full {
+.rounded-large {
   border-radius: 150597px;
 }

@@ -1,25 +1,27 @@
 import Page from './../components/page'
 import Footer from './../components/footer'
 
-const Image = ({ src, ...props }) => (
-  <figure>
-    <img src={src} {...props} />
-  </figure>
-)
+import heroStyles from './../styles/pages/home/hero.module.css'
 
 const Index = () => {
+  const Image = ({ src, ...props }) => (
+    <figure>
+      <img src={src} {...props} />
+    </figure>
+  )
+  
   return (
     <Page>
-      <section className="section hero">
-        <div className="inner side-by-side">
-          <div className="image">
+      <section className={heroStyles.hero}>
+        <div className={heroStyles.inner}>
+          <div className={heroStyles.image}>
             <Image
               src="/jackets/coral-jacket.png"
               alt="Coral jacket"
             />
           </div>
-          <div className="content">
-            <h1 className="title">Waterproof rain jackets</h1>
+          <div className={heroStyles.content}>
+            <h1 className={heroStyles.title}>Waterproof rain jackets</h1>
             <a href="" className="button">See all jackets</a>
           </div>
         </div>

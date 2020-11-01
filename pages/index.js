@@ -9,9 +9,10 @@ import heroStyles from './../styles/pages/home/hero.module.css'
 import popularStyles from './../styles/pages/home/popular.module.css'
 
 const Index = () => {
-  const [heartEnabled, setHeartEnabled] = useState(false)
+  const [heart, setHeart] = useState(false)
 
-  const toggle = () => setHeartEnabled(!heartEnabled)
+  const toggleHeart = () => setHeart(!heart)
+
 
   return (
     <Page>
@@ -31,7 +32,7 @@ const Index = () => {
           <div className={popularStyles.grid}>
             <div className="flex flex-col items-center">
               <div className="flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
-                <div className={`heart ${heartEnabled ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggle}>
+                <div className={`heart ${heart ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggleHeart}>
                   <Heart />
                 </div>
                 <Image src="/jackets/black-jacket.png" width="213" height="220" alt="Black Jacket" />

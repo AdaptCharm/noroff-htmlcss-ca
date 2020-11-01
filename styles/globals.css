@@ -109,7 +109,7 @@ button, .button {
   .container, .container-sm {
     --max-width: 576;
     --gutter-x: 18;
-    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+    max-width: calc(var(--max-width) - var(--gutter-x) * 2);
   }
 }
 
@@ -117,7 +117,7 @@ button, .button {
   .container, .container-sm, .container-md {
     --max-width: 768;
     --gutter-x: 24;
-    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+    max-width: calc(var(--max-width) - var(--gutter-x) * 2);
   }
 }
 
@@ -125,7 +125,7 @@ button, .button {
   .container, .container-sm, .container-md, .container-lg {
     --max-width: 992;
     --gutter-x: 16;
-    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+    max-width: calc(var(--max-width) - var(--gutter-x) * 2);
   }
 }
 
@@ -133,7 +133,7 @@ button, .button {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     --max-width: 1200;
     --gutter-x: 30;
-    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+    max-width: calc(var(--max-width) - var(--gutter-x) * 2);
   }
 }
 
@@ -141,7 +141,7 @@ button, .button {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     --max-width: 1400;
     --gutter-x: 40;
-    max-width: calc(var(--max-width) - (var(--gutter-x) * 2));
+    max-width: calc(var(--max-width) - var(--gutter-x) * 2);
   }
 }
 

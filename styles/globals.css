@@ -255,3 +255,77 @@ button, .button {
     flex: 0 0 auto;
   }
 }
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 1);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-2 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 2);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-3 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 3);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-4 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 4);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-5 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 5);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-6 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 6);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-7 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 7);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-8 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 8);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-9 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 9);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-10 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 10);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-11 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 11);
+    flex: 0 0 auto;
+  }
+
+  .col-lg-12 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 12);
+    flex: 0 0 auto;
+  }
+}

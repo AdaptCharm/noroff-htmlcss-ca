@@ -1044,3 +1044,47 @@ button, .button {
 .rounded-large {
   border-radius: 150597px;
 }
+
+
+
+
+
+/* Custom styling */
+.circle {
+  border: 3px solid var(--background);
+  transition: all .2s ease-in;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.circle:hover {
+  border: 2px solid var(--background);
+  transition: border .2s ease-out;
+  transform: scale(1);
+}
+
+.circle:nth-child(even) {
+  background-color: hsl(11, 87%, 58%);
+}
+
+.circle:nth-child(odd) {
+  background-color: black;
+}
+
+
+/* Heart */
+.heart {
+  transform: scale(0.8);
+  transition: transform .2s ease-out;
+  cursor: pointer;
+}
+
+.heart:hover {
+  transform: scale(1);
+  transition: transform .2s ease-in;
+}
+
+.heart:hover > path {
+  fill: #868e96;
+  transition: fill .3s cubic-bezier(.4,0,.2,1);
+}

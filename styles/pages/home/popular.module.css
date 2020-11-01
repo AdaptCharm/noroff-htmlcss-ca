@@ -11,7 +11,7 @@
   }
 }
 
-.grid > * {
+.grid > *:not(:last-child) {
   grid-row: span 1/span 1;
   background-color: transparent;
   overflow: hidden;
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 992px) {
-  .grid > * {
+  .grid > *:not(:last-child) {
     grid-column: span 1/span 1;
     height: inherit
   }

@@ -403,3 +403,77 @@ button, .button {
     flex: 0 0 auto;
   }
 }
+
+@media (min-width: 1400px) {
+  .col-xxl-1 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 1);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-2 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 2);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-3 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 3);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-4 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 4);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-5 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 5);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-6 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 6);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-7 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 7);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-8 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 8);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-9 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 9);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-10 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 10);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-11 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 11);
+    flex: 0 0 auto;
+  }
+
+  .col-xxl-12 {
+    --columns: 12;
+    width: calc(100% / var(--columns) * 12);
+    flex: 0 0 auto;
+  }
+}

@@ -21,7 +21,7 @@ const Index = () => {
           <Image src="/jackets/coral-jacket.png" width="213" height="220" alt="Coral Jacket" />
           <div className={heroStyles.content}>
             <h1 className={heroStyles.title}>Waterproof rain jackets</h1>
-            <a href="" className="button">See all jackets</a>
+            <a href="/clothes" className="button">See all jackets</a>
           </div>
         </div>
       </section>
@@ -31,13 +31,43 @@ const Index = () => {
           <h2 className="text-secondary mb-12">Popular Jackets</h2>
           <div className={popularStyles.grid}>
             <div className="flex flex-col items-center">
-              <div className="relative flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
+              <a href="/clothes/all-weather-jacket" className="relative flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
                 <div className={`heart ${heart ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggleHeart}>
                   <Heart />
                 </div>
                 <Image src="/jackets/black-jacket.png" width="213" height="220" alt="Black Jacket" />
                 <span className="price">$200,00</span>
+              </a>
+              <div className="inline-flex my-4">
+                <div className="circle size-5 bg-primary rounded-large"></div>
+                <div className="circle size-5 bg-primary rounded-large ml-3"></div>
               </div>
+              <h3 className="text-secondary text-base text-center font-medium">All weather jacket</h3>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <a href="/clothes/all-weather-jacket" className="relative flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
+                <div className={`heart ${heart ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggleHeart}>
+                  <Heart />
+                </div>
+                <Image src="/jackets/black-jacket.png" width="213" height="220" alt="Black Jacket" />
+                <span className="price">$200,00</span>
+              </a>
+              <div className="inline-flex my-4">
+                <div className="circle size-5 bg-primary rounded-large"></div>
+                <div className="circle size-5 bg-primary rounded-large ml-3"></div>
+              </div>
+              <h3 className="text-secondary text-base text-center font-medium">All weather jacket</h3>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <a href="/clothes/all-weather-jacket" className="relative flex flex-col items-end px-5 py-5 rounded-medium bg-primary">
+                <div className={`heart ${heart ? 'active pulseEffect' : 'pulseEffectTwo'}`} onClick={toggleHeart}>
+                  <Heart />
+                </div>
+                <Image src="/jackets/black-jacket.png" width="213" height="220" alt="Black Jacket" />
+                <span className="price">$200,00</span>
+              </a>
               <div className="inline-flex my-4">
                 <div className="circle size-5 bg-primary rounded-large"></div>
                 <div className="circle size-5 bg-primary rounded-large ml-3"></div>

@@ -5,6 +5,9 @@
   --foreground: hsl(192, 73%, 15%);
 
   --radius-small: 5px;
+  --radius-medium: 12px;
+
+  --shadow-large: 0 30px 60px hsla(0, 0%, 0%, 0.12);
 
   --font-primary: 'Nunito', sans-serif;
 }

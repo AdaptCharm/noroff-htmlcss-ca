@@ -1,0 +1,9 @@
+.popular {
+  padding: 15vh 0;
+  background-color: var(--foreground);
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
